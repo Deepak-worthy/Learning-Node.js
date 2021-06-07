@@ -1,0 +1,38 @@
+Q1)Why are we using Express JS ? Any reasons?
+
+ans- Server side can be complex and it becomes difficult to code using only vanilla nodejs. Expressjs framework comes in handy in taking care of the nitty-gitty details so that we can focus on writing our business logic. It provides a lot of functionalities with helper functions and a suite of tools and rules that helps us to easily build our web applications.It also includes various middleware modules which we can use to perform additional tasks on request and response. Basically it does the heavy lifting for us for fast and easy developement. 
+
+
+Q2)What are middlewares ?
+
+ans-Middleware functions are functions that have access to the request object (req), the response object (res), and the next function in the application’s request-response cycle. The next function is a function in the Express router which, when invoked, executes the middleware succeeding the current middleware.
+Middleware functions can perform the following tasks:
+Execute any code.
+Make changes to the request and the response objects.
+End the request-response cycle.
+Call the next middleware in the stack.
+If the current middleware function does not end the request-response cycle, it must call next() to pass control to the next middleware function. Otherwise, the request will be left hanging.
+
+Q3)What is next used for?
+
+ans-The next function is a function in the Express router which, when invoked, executes the middleware succeeding the current middleware.
+
+Q4)What is res.send used for?
+ 
+ ans-The res.send() function basically sends the HTTP response.This function accepts a single parameter body that describe the body which is to be sent in the response. The body parameter can be a String or a Buffer object or an object or an Array.
+ res.send( [body] )
+ 
+ Q5)If i do res.send('<h1> hello to node js </h1>') . What will be the content-type header equal to?
+ 
+ ans-By default expressjs sets the content-type header to text/html. We can override this using res.setHeader method.
+ 
+ Q6)If I do res.send( { key1: value }) . What will be the content-type header equal to?
+ 
+ ans-It will be equal to json object.
+ 
+ Q7)What does app.listen(3000) do behind the scenes?
+ 
+ ans-It is equivalent to the below two lines- 
+ 
+  var server = http.createServer(app);
+  server.listen(3000);
