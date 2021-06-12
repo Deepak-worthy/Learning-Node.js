@@ -1,5 +1,6 @@
+Q1)Tell me when should you use SQl and when No SQL?
 
-When to use SQL instead of NoSQL
+ans-When to use SQL instead of NoSQL
 
 01
 
@@ -62,3 +63,8 @@ NoSQL makes it easy to store all different types of data together and without ha
 Your data needs scale up, out, and down.
 
 As discussed above, NoSQL provides much greater flexibility and the ability to control costs as your data needs change.
+
+
+Q2)What is vertical and horizontal scaling?
+
+ans-Horizontal scaling means scaling by adding more machines to your pool of resources (also described as “scaling out”), whereas vertical scaling refers to scaling by adding more power (e.g. CPU, RAM) or memory to an existing machine (also described as “scaling up”).
